@@ -2,13 +2,12 @@
 
 A curated list of awesome Python frameworks, libraries, software and resources.
 
-- [Awesome Pandas Alternatives](#awesome-pandas-alternatives)
- - [Pandas Shortcomincs](#pandas-shortcomings)
- - [Almost Under Every Hood: Apache Arrow](#almost-under-every-hood-apache-arrow)
- - [Dataframe Libraries with Query Engines](#dataframe-libraries-with-query-engines)
- - [Distributed Computing Libraries](#distributed-computing-libraries)
- - [GPU Libraries](#gpu-libraries)
- - [Ported from R](#ported-from-r)
+- [Pandas Shortcomincs](#pandas-shortcomings)
+- [Almost Under Every Hood: Apache Arrow](#almost-under-every-hood-apache-arrow)
+- [Dataframe Libraries with Query Engines](#dataframe-libraries-with-query-engines)
+- [Distributed Computing Libraries](#distributed-computing-libraries)
+- [GPU Libraries](#gpu-libraries)
+- [Ported from R](#ported-from-r)
  
 ## Pandas Shortcomings
 
