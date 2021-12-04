@@ -1,4 +1,16 @@
-# Awesome Pandas Alternatives
+# Awesome Pandas Alternatives [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
+A curated list of awesome Python frameworks, libraries, software and resources.
+
+- [Awesome Pandas Alternatives](#awesome-pandas-alternatives)
+ - [Pandas Shortcomincs](#pandas-shortcomings)
+ - [Almost Under Every Hood: Apache Arrow](#almost-under-every-hood-apache-arrow)
+ - [Dataframe Libraries with Query Engines](#dataframe-libraries-with-query-engines)
+ - [Distributed Computing Libraries](#distributed-computing-libraries)
+ - [GPU Libraries](#gpu-libraries)
+ - [Ported from R](#ported-from-r)
+ 
+## Pandas Shortcomings
 
 We all love [`pandas`](https://github.com/pandas-dev/pandas) and most of us have learnt how to do data manipulation using this amazing library. However useful and great `pandas` is, unfortunately it has [some well-known shortcomings](https://youtu.be/ZTXFQ2sEarQ?t=1642) that developers have been trying to address in the past years. Here are the most common weak points:
 
@@ -7,7 +19,7 @@ We all love [`pandas`](https://github.com/pandas-dev/pandas) and most of us have
 
 This awesome-repo aims to gather the libraries meant to overcome `pandas` weaknesses, as well as some resources to learn them. Everyone is encouraged to add new projects, or edit the descriptions to correct potential mistakes.
 
-## (Almost) Under Every Hood: Apache Arrow
+## Almost Under Every Hood: Apache Arrow
 
 Most of these libraries leverage [Apache Arrow](https://arrow.apache.org/), "a language-independent columnar memory format". In other words, unlike good old  `.csv` files that are stored by rows, Apache Arrow storage is (also) column-based. This allows partitioning the data in chunks with a lot of [clever tricks](https://arrow.apache.org/docs/format/Columnar.html) to enable greated compression (like storing sequences of repeated values) and faster queries (because each chunk also stores metadata like the min or max value).
 
@@ -15,7 +27,7 @@ Arrow offers Python bindings with its Python API, named [`pyarrow`](https://arro
 
 On its own, `pyarrow` is rarely being used as a standalone library to perform data manipulation: usually more expressive and feature rich modules are built upon Arrow, especially on its fast C++ or Rust API interface. For this reason, most of the libraries listed here will display a general landing page and links to other languages APIs (mostly, Python and R). To be honest, the R `{arrow}` interface has a backend for [`{dplyr}`](https://github.com/tidyverse/dplyr) (the equivalent of `pandas` in R), which makes its use more straightforward. Development for the R `{arrow}` package is [quite active](https://arrow.apache.org/blog/2021/11/08/r-6.0.0/)!
 
-## Multiprocessor/Multithreaded Dataframe Libraries
+## Dataframe Libraries with Query Engines
 
 These libraries leverage Apache Arrow memory format to implement a parallelised and lazy execution engine.
 
@@ -42,7 +54,7 @@ Generally libraries work on CPUs and clusters are usually made up of CPUs. Apart
 * [`cuDF`](https://github.com/rapidsai/cudf) is a GPU dataframe library, which is part of the [RapidsAI framework](https://rapids.ai/), that enables "end-to-end data science and analytics pipelines entirely on GPUs". There are many other libraries, like `cuML` for machine learning, `cuspatial` for spatial data manipulations, and more. `cuDF` is based on Apache Arrow, because the memory format is compatible with both CPU and GPU architecture.
 * [`blazingSQL`](https://github.com/BlazingDB/blazingsql) is "is a GPU accelerated [distributed] SQL engine built on top of the RAPIDS ecosystem" and, as such, leverages Apache Arrow. Think of this as Apache `spark` on GPU.
 
-## Implementations Closer to R Libraries
+## Ported from R
 
 R has an amazing library called `{dplyr}` that enables easy data manipulation. `{dplyr}` is part of the so-called [`{tidyverse}`](https://www.tidyverse.org/), a unified framework for data manipulation and visualisation.
 
