@@ -1,14 +1,9 @@
 # Awesome Pandas Alternatives [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-
 A curated list of awesome Python frameworks, libraries, software and resources.
-
-- [Pandas Shortcomings](#pandas-shortcomings)
-- [Almost Under Every Hood: Apache Arrow](#almost-under-every-hood-apache-arrow)
-- [Modern DataFrame Libraries](#modern-dataframe-libraries)
-- [Distributed Computing Libraries](#distributed-computing-libraries)
-- [GPU Libraries](#gpu-libraries)
-- [Other Libraries and Ports from R](#other-libraries-and-ports-from-r)
  
+<!-- START doctoc -->
+<!-- END doctoc -->
+
 ## Pandas Shortcomings
 
 We all love [`pandas`](https://github.com/pandas-dev/pandas) and most of us have learnt how to do data manipulation using this amazing library. However useful and great `pandas` is, unfortunately it has [some well-known shortcomings](https://youtu.be/ZTXFQ2sEarQ?t=1642) that developers have been trying to address in the past years. Here are the most common weak points:
