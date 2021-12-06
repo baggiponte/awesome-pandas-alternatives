@@ -1,8 +1,23 @@
 # Awesome Pandas Alternatives [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 A curated list of awesome Python frameworks, libraries, software and resources.
  
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Pandas Shortcomings](#pandas-shortcomings)
+- [Almost Under Every Hood: Apache Arrow](#almost-under-every-hood-apache-arrow)
+- [Modern DataFrame Libraries](#modern-dataframe-libraries)
+- [Distributed Computing Libraries](#distributed-computing-libraries)
+  - [Row-based storage](#row-based-storage)
+  - [Columnar Based Storage](#columnar-based-storage)
+    - [Using Rust](#using-rust)
+    - [Using Ray](#using-ray)
+  - [Higher Level APIs](#higher-level-apis)
+- [GPU Libraries](#gpu-libraries)
+- [Other Libraries and Ports from R](#other-libraries-and-ports-from-r)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Pandas Shortcomings
 
