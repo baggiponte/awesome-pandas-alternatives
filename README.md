@@ -7,7 +7,7 @@ A curated list of awesome Python frameworks, libraries, software and resources.
 
 - [Pandas Shortcomings](#pandas-shortcomings)
 - [Almost Under Every Hood: Apache Arrow](#almost-under-every-hood-apache-arrow)
-- [Modern DataFrame Libraries](#modern-dataframe-libraries)
+- [In-Memory DataFrame Libraries](#in-memory-dataframe-libraries)
 - [Distributed Computing Libraries](#distributed-computing-libraries)
   - [Row-based storage](#row-based-storage)
   - [Columnar Based Storage](#columnar-based-storage)
