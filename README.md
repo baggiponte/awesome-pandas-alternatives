@@ -36,9 +36,9 @@ Arrow offers Python bindings with its Python API, named [`pyarrow`](https://arro
 
 On its own, `pyarrow` is rarely being used as a standalone library to perform data manipulation: usually more expressive and feature rich modules are built upon Arrow, especially on its fast C++ or Rust API interface. For this reason, most of the libraries listed here will display a general landing page and links to other languages APIs (mostly, Python and R). To be honest, the R `{arrow}` interface has a backend for [`{dplyr}`](https://github.com/tidyverse/dplyr) (the equivalent of `pandas` in R), which makes its use more straightforward. Development for the R `{arrow}` package is [quite active](https://arrow.apache.org/blog/2021/11/08/r-6.0.0/)!
 
-## Modern DataFrame Libraries
+## In-Memory DataFrame Libraries
 
-These libraries leverage Apache Arrow memory format to implement a parallelised and lazy execution engine. These are designed to take advantage of all the cores (and threads) of a machine.
+These libraries leverage Apache Arrow memory format to implement a parallelised and lazy execution engine. These are designed to take advantage of all the cores (and threads) of a machine, but are mainly geared towards dealing with in-memory data (i.e., with `read_csv()`-like functions to read the data into the memory of your machine, instead of processing it on a cluster node).
 
 * [`polars`](https://github.com/pola-rs/polars): Polars claims to be "a blazingly fast DataFrames library implemented in Rust using Apache Arrow Columnar Format as memory model". It leverages [(quasi-)lazy evaluation](https://pola-rs.github.io/polars-book/user-guide/index.html#introduction), uses all cores, has multithreaded operations and its query engine is written in Rust. `polars` has an expressive and high-level API that enables complex operations.
 * [`duckdb`](https://github.com/duckdb/duckdb): is another fairly recent DataFrame library. It offers both a SQL interface and a Python API: in other words, it can be used to query `.csv` and Arrow's `.parquet` files, but also in-memory `pandas.DataFrame`s using both SQL and a syntax closer to Python or `pandas`. It supports window functions.
